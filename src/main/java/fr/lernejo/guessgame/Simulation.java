@@ -36,7 +36,6 @@ public class Simulation {
         } else {
             player.respond(true);
         }
-        logger.log("Le joueur s'est trompé.");
         return false;
     }
 
@@ -45,7 +44,6 @@ public class Simulation {
         boolean isWon = false;
 
         for (long i = 0; i < maxRounds; i++) {
-            logger.log("nouvelle tentative");
             if (nextRound()) {
                 // On affiche le nombre de coups seuleument si le joueur gagne
                 logger.log("Partie terminée en " + i + " coups");
